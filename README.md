@@ -1,6 +1,6 @@
-#Weather Project
+# Weather Project
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wired.co.uk%2Farticle%2Flong-range-weather-forecast-uk&psig=AOvVaw0igkc5KpFG_YF3_w0NU73h&ust=1627549335097000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjR3cG0hfICFQAAAAAdAAAAABAD" width="100" height="100"/>
+<img src="./weather img.png" width="100" height="100"/>
 
 
 The Weather Project is about know the weather of your city and all cities in the world.
