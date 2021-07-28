@@ -11,6 +11,11 @@ const WeatherCard = ({dt, min, max, main, icon}) => {
       <Card.Body>
         <Card.Title>{main}</Card.Title>
         <p>{date.getFullYear()}-{date.getMonth() + 1}-{date.getDate()}</p>
+        <p>
+          {date.getHours()}:
+          {date.getMinutes().toString().padStart(2, '0')}:
+          {date.getSeconds().toString().padStart(2, '0')}
+        </p>
         <p>Min: {min}</p>
         <p>Max: {max}</p>
       </Card.Body>
