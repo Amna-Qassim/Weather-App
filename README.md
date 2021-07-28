@@ -1,3 +1,51 @@
+#Weather Project
+
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wired.co.uk%2Farticle%2Flong-range-weather-forecast-uk&psig=AOvVaw0igkc5KpFG_YF3_w0NU73h&ust=1627549335097000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjR3cG0hfICFQAAAAAdAAAAABAD" width="100" height="100"/>
+
+
+The Weather Project is about know the weather of your city and all cities in the world.
+
+## How to run it?
+
+**requires [Node.js](https://nodejs.org/en/download/)** LTS Version: 14.17.0 to run.
+
+```
+git clone https://github.com/Amna-Qassim/Weather-App.git
+cd pomodoro
+npm install
+npm start
+```
+
+## Folder structure
+
+```
+├── weather img.png
+├── README.md
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+└── src
+    ├── App.css
+    ├── App.js
+    ├── components
+    |    ├── CitySelector.js
+    |    ├── WeatherCard.js
+    │    ├── WeatherList.js
+    │    ├── hooks
+    │    │   └── UseFetch.js
+    │    └── Config
+    │        └── index.js
+    ├── index.js
+    ├── reportWebVitals.js
+    └── setupTests.js
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
