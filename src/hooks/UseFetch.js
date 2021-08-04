@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 const UseFetch = (initialUrl) => {
   const [data, setData] = useState(null);
@@ -14,14 +14,15 @@ const UseFetch = (initialUrl) => {
     fetch(url)
     .then((r) => r.json())
     .then((data) => {
+      // when there is a response (either result, or a message saying API key is bad)
       setInProgress(false);
-      if (data.cod >= 400) {
+      if (data.code >= 400) {
         setError(data.message);
         return;
       }
       setData(data);
     })
-
+    //.catch(...)` will happen if fetch cant get a response (for example, if your internet is down)
     .catch((error) => {
       setInProgress(false);
       setError(error);

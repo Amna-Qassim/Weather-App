@@ -2,9 +2,11 @@ import React from 'react';
 import CitySelector from './Components/CitySelector';
 import { Container } from 'react-bootstrap';
 import UseFetch from './hooks/UseFetch';
-import { apikey, baseUrl} from './Config';
+import { baseUrl} from './Config';
 import WeatherList from './Components/WeatherList';
 import './App.css';
+require('dotenv').config();
+
 
 function App() {
   const {data, error, inProgress, setUrl} = UseFetch();
@@ -18,7 +20,7 @@ function App() {
   return (
     <Container className="App">
       <CitySelector onSelectButtonClick={(city) => 
-      setUrl(`${baseUrl}/data/2.5/forecast?q=${city}&cnt=5&appid=${apikey}&units=metric`)} />
+      setUrl(`${baseUrl}/data/2.5/forecast?q=${city}&cnt=5&appid=${process.env.REACT_APP_API_KEY}&units=metric`)} />
 
       {getContent()}
       
